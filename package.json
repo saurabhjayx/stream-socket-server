@@ -1,0 +1,23 @@
+{
+  "name": "stream-socket-server",
+  "version": "1.0.0",
+  "description": "Stream server using sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabhjayx/stream-socket-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurabhjayx/stream-socket-server/issues"
+  },
+  "homepage": "https://github.com/saurabhjayx/stream-socket-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
