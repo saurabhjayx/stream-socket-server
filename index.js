@@ -51,8 +51,7 @@ peers.on('connection', socket => {
     for (const [socketID, socket] of connectedPeers.entries()) {
       // don't send to self
       if (socketID !== data.socketID) {
-        console.log(socketID, data.payload.type)
-        socket.emit('offerOrAnswer', data.payload)
+        socket.emit('action', data.payload)
       }
     }
   })
@@ -62,7 +61,6 @@ peers.on('connection', socket => {
     for (const [socketID, socket] of connectedPeers.entries()) {
       // don't send to self
       if (socketID !== data.socketID) {
-        console.log(socketID, data.payload)
         socket.emit('candidate', data.payload)
       }
     }
